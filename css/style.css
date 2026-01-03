@@ -1,64 +1,106 @@
-/* Reset básico */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #eef2f7; /* gris azulado suave */
   margin: 0;
   padding: 0;
 }
 
-/* Contenedor principal */
+
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 40px auto;
-  background-color: white;
-  padding: 30px;
+  background-color: #ffffff;
+  padding: 40px;
   border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Títulos */
 h1 {
-  color: #1e3a8a;
+  color: #1f3c88;
+  margin-bottom: 5px;
 }
 
 h2 {
-  color: #374151;
+  color: #333;
+  margin-top: 0;
 }
 
 h3 {
-  margin-top: 30px;
-  color: #1f2937;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  color: #1f3c88;
 }
 
-/* Texto */
-p {
-  line-height: 1.6;
-}
-
-/* Lista de habilidades */
 ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 
-li {
-  background-color: #e5e7eb;
+ul li {
+  background-color: #f1f3f6;
   margin-bottom: 10px;
   padding: 10px 15px;
   border-radius: 5px;
 }
-/* Proyectos */
+
 .project {
-  background-color: #f1f5f9;
-  padding: 15px;
-  border-radius: 6px;
-  margin-top: 15px;
+  background-color: #ffffff;
+  border-left: 5px solid #2563eb; /* azul más vivo */
+  padding: 20px 22px;
+  margin: 18px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
-/* Contacto */
-p {
-  margin-bottom: 10px;
+
+
+.project h4 {
+  margin-top: 0;
+  color: #1f3c88;
 }
-/* Separación entre secciones */
+
+.project p {
+  margin: 5px 0;
+}
+
+strong {
+  color: #333;
+}
+/* ===== Sección Proyectos ===== */
+
+.project {
+  background-color: #ffffff;
+  border-left: 5px solid #1f3c88;
+  padding: 20px 22px;
+  margin: 18px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.project h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #1f3c88;
+  font-size: 1.1rem;
+}
+
+.project p {
+  margin: 6px 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.project strong {
+  color: #111;
+}
+
+/* Separación general entre secciones */
 h3 {
-  margin-top: 40px;
+  margin-top: 48px;
 }

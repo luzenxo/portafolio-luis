@@ -1,15 +1,18 @@
+/* ===== Reset ===== */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* ===== Body ===== */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #eef2f7;
-  margin: 0;
-  padding: 0;
   color: #333;
 }
 
+/* ===== Contenedor ===== */
 .container {
   max-width: 900px;
   margin: 40px auto;
@@ -19,34 +22,43 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ===== Títulos ===== */
 h1 {
   color: #1f3c88;
+  margin-bottom: 6px;
 }
 
 h2 {
   color: #444;
-  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 h3 {
   margin-top: 48px;
+  margin-bottom: 16px;
   padding-bottom: 6px;
   border-bottom: 2px solid #e0e0e0;
   color: #1f3c88;
 }
 
 h4 {
-  margin-top: 0;
   color: #1f3c88;
+  margin-bottom: 10px;
 }
 
+/* ===== Texto ===== */
 p {
   line-height: 1.6;
+  margin-bottom: 10px;
 }
 
+strong {
+  color: #111;
+}
+
+/* ===== Listas ===== */
 ul {
   list-style: none;
-  padding: 0;
 }
 
 ul li {
@@ -56,86 +68,65 @@ ul li {
   border-radius: 5px;
 }
 
-/* PROYECTOS */
+/* ===== Proyectos ===== */
 .project {
   background-color: #fff;
   border-left: 5px solid #1f3c88;
   padding: 22px;
-  margin: 20px 0;
+  margin: 22px 0;
   border-radius: 8px;
 }
 
+/* Layout texto + imagen */
 .project-content {
   display: flex;
-  gap: 24px;
   align-items: center;
+  gap: 24px;
 }
 
+/* Texto */
 .project-text {
   flex: 1;
 }
 
+/* Imagen */
 .project-image {
-  flex: 1;
-  text-align: center;
+  flex: 0 0 25%;
+  text-align: right;
 }
 
-.project-img {
-  width: 50%;
-  max-width: 320px;
+.project-image img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
-/* LINKS */
+/* ===== Links ===== */
 a {
   color: #2563eb;
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* RESPONSIVE */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .project-content {
     flex-direction: column;
+    align-items: flex-start;
   }
 
-  .project-img {
+  .project-image {
     width: 100%;
+    text-align: center;
+  }
+
+  .project-image img {
     max-width: 100%;
-  }
-}
-/* Layout texto + imagen */
-.project-flex {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-
-.project-text {
-  flex: 1;
-}
-
-.project-media {
-  flex: 0 0 220px;
-}
-
-.project-media img {
-  width: 100%;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .project-flex {
-    flex-direction: column;
-  }
-
-  .project-media {
-    width: 100%;
   }
 }
